@@ -1,0 +1,273 @@
+/*
+Colors used
+
+Text Color (color name): #hex;
+Primary Color (color name): #hex;
+Secondary Color (color name): #hex;
+ */
+
+ body {
+    background-color: #f9f9f9;
+   font-family: 'Lato', sans-serif;
+   font-weight: 300;
+   font-size: 16px;
+   /* Sets the font size to 16px */
+   line-height: 1.6;
+   /* Sets the line-height to 1.6 */
+ }
+
+ h1 {
+   font-size: 30px;
+   font-weight: 600;
+ }
+
+ h2 {
+   font-size: 24px;
+   font-weight: 600;
+   font-style: italic;
+ }
+
+ h3 {
+   font-size: 18px;
+   font-weight: 600;
+   font-style: italic;
+ }
+
+
+ a {
+   color:#b967ff;
+ }
+
+
+ a:visited {
+   /* visited link */
+   color: #05676e;
+ }
+ a:hover, a:focus {
+   /* No underlining when hovering over a link */
+   color:#b967ff;
+   text-decoration: none;
+ }
+
+ a:active {
+   /* selected link */
+   color:#651e1e;
+ }
+ * {
+   box-sizing: border-box;
+ }
+ .profile__logo {
+  width: 200px;
+  padding: 2px;
+ }
+ .profile__portrait {
+  text-align: right;
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.aboutme{
+text-align: center;
+list-style-type: none;
+}
+.aboutme-list{
+text-align: center;
+list-style-type: none;
+}
+.aboutme-table{
+  margin-left: auto;
+   margin-right: auto;
+}
+
+ button {
+   /* overwrites browser defaults and resets the border */
+   border: none;
+   /* takes the font from the outer container */
+   font-family: inherit;
+   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+   background-color: #357b70;
+   color: white;
+   text-decoration: none;
+   /*adds spacing to the button */
+   padding: 10px;
+   border-radius: 3px;
+   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+ }
+
+ button:hover, button:focus {
+  /*  the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 90% */
+  opacity: 0.9;
+}
+.button__secondary {
+  background-color: #4c95ff;
+  color:white;
+}
+/*---------button cv download--*/
+.button, button {
+  /* overwrites browser defaults */
+  /* resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* style button */
+  background-color: #357b70;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.9s opacity;
+}
+
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+.page-header__item {
+  flex: 0 1 200px;
+}
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+.navigation-list {
+  list-style-type: none;
+}
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.work{
+text-align: center;
+}
+.contact-details{
+  text-align: center;
+}
+#contact-form{
+  text-align: center;
+  }
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction:column;
+  text-align:center;
+}
+/* start grid fallback */
+.grid__item {
+ display: inline-block;
+ width: 33%;
+}
+/* end grid fallback */
+
+@supports (display: grid) {
+ .grid {
+   display: grid;
+   /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 20px;
+   margin:20px;
+
+ }
+ .grid__item {
+   background-color: lightgray;
+   width: auto;
+   min-height: auto;
+   margin: 0;
+ }
+ .grid__item:last-child {
+   grid-column: 3 / 3;
+   grid-row: 1 / 3;
+ }
+}
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  /*shared media*/
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+/*----sun color change animation---*/
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+/*----sun color change animation---*/
+
+
+/*----cloud move animation---*/
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+.cloud-front {
+  animation: 20s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+/*----cloud move animation---*/
