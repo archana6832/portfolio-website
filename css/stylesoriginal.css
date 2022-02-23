@@ -107,7 +107,7 @@ button {
   font-family: inherit;
 
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #357b70;
+  background-color: #f5c842;
   color: white;
   text-decoration: none;
 
@@ -146,7 +146,7 @@ button {
   font-family: inherit;
 
   /* style button */
-  background-color: #357b70;
+  background-color: #f5c842;
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -235,11 +235,6 @@ button:focus,
     width: auto;
     min-height: auto;
     margin: 0;
-  }
-
-  .grid__item:last-child {
-    grid-column: 3 / 3;
-    grid-row: 1 / 3;
   }
 }
 
