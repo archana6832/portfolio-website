@@ -103,10 +103,6 @@ a:active {
       justify-content: space-around;
 }
 
-.aboutme-list {
-  list-style-type: none;
-}
-
 .button {
   border: none;
   display: inline-block;
