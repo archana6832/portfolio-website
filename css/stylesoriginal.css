@@ -77,6 +77,14 @@ a:active {
   text-align: center;
   list-style-type: none;
   justify-content: space-around;
+  padding-inline-start: 0;
+}
+
+.aboutme-list {
+  text-align: center;
+  list-style-type: none;
+  justify-content: space-around;
+  padding-inline-start: 0;
 }
 
 .button {
