@@ -88,13 +88,13 @@ a:active {
 }
 
 .aboutme-list {
-  text-align: center;
   list-style-type: none;
 }
 
 .button {
   border: none;
   display: inline-block;
+  max-width: 200px;
   font-family: inherit;
   background-color: #e3fed2;
   color: black;
@@ -134,10 +134,6 @@ a:active {
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
-}
-
-.work {
-  text-align: center;
 }
 
 .contact-details {
