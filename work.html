@@ -7,7 +7,6 @@
   <link rel="shortcut icon" href="image/favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <!--<link rel="stylesheet" type="text/css" href="css/style.production.css">-->
   <link rel="stylesheet" type="text/css" href="css/stylesoriginal.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -40,17 +39,19 @@
   </header>
 
   <!-- Main content -->
-  <section>
-
-  <div class="work">
-     <h1>PORTFOLIO</h1>
+<!--  <section>
+<div class="work">-->
+<main class="column-wrapper">
+   <section class="content__centered">
+     <h1>Portfolio</h1>
+          <h3 class="content__centered">Check out some of my work</h3>
      </div>
      <div class="grid">
-        <!-- Grid items will live here -->
+       <!-- Grid items will live here -->
 
 <div class="grid__item">
    <h2>Pokedex App (simple-js-app)</h2>
-  <img src="image/pokemon.png" class="meet" alt="Screenshot of pokedex App" width="400" height="200"/>
+  <img src="image/pokemon.png" class="work_image" alt="Screenshot of pokedex App"/>
    <p>
      A simple web application with HTML, CSS, and JavaScript ,that loads data from external API and shows the details of the selected data loaded in a modal.
      <br>
@@ -58,7 +59,40 @@
   <a href="https://archana6832.github.io/simple-js-app/">Live Page</a>
 </div>
 
-<!----------movie_api-------->
+<!--myFlix-client-------->
+<div class="grid__item">
+   <h2>myFlix-client (React app) </h2>
+   <img src="image/myflix_client.png" class="work_image" alt="Screenshot of myflix_client App"/>
+   <p>
+    Using React, build the client-side of the application  movie_api based on its existing server-side code (REST API and database).
+   <br>
+   <a href="https://github.com/archana6832/myFlix-client">See project on GitHub</a> <br>
+  <a href="https://myflix-client-archananair.netlify.app">Live Page</a>
+</div>
+
+<!---MEET APP-------->
+<div class="grid__item">
+  <h2>PROGRESSIVE WEB APP</h2>
+   <img src="image/meet_app.png" class="work_image" alt="Screenshot of Meet App"/>
+   <p>
+  To build a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.
+  </p>
+<a href="https://github.com/archana6832/meet">See project on GitHub</a>  <br>
+<a href="https://archana6832.github.io/meet/">Live Link</a>
+</div>
+
+<!---CHAT APP-------->
+<div class="grid__item">
+   <h2>CHAT App</h2>
+    <img src="image/chat_app.png" class="work_image" alt="Screenshot of Chat App"/>
+   <p>
+     A chat app for mobile devices developed with React Native.The app provides
+                   users with a chat interface and options to share images and their location.
+   </p>
+   <a href="https://github.com/archana6832/Chat">See project on GitHub</a> <br>
+</div>
+
+<!---movie_api-------->
 <div class="grid__item">
    <h2>movie_api (MERN stack)</h2>
    <p>
@@ -69,46 +103,10 @@ personal information, and create a list of their favorite movies.
    <a href="https://myflix-moviesapp.herokuapp.com/">Live Page</a>
 
 </div>
-<!----------myFlix-client-------->
-<div class="grid__item">
-   <h2>myFlix-client (React app) </h2>
-   <img src="image/myflix_client.png" class="meet" alt="Screenshot of myflix_client App" width="400" height="200"/>
-   <p>
-    Using React, build the client-side of the application  movie_api based on its existing server-side code (REST API and database).
-   <br>
-   <a href="https://github.com/archana6832/myFlix-client">See project on GitHub</a> <br>
-  <a href="https://myflix-client-archananair.netlify.app">Live Page</a>
-</div>
-
-<!----------MEET APP-------->
-<div class="grid__item">
-  <h2>PROGRESSIVE WEB APP</h2>
-   <img src="image/meet_app.png" class="meet" alt="Screenshot of Meet App" width="400" height="200"/>
-   <p>
-  To build a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.
-  </p>
-<a href="https://github.com/archana6832/meet">See project on GitHub</a>  <br>
-<a href="https://archana6832.github.io/meet/">Live Link</a>
-</div>
-
-<!------CHAT APP-------->
-<div class="grid__item">
-   <h2>CHAT App</h2>
-    <img src="image/chat_app.png" class="meet" alt="Screenshot of Chat App" width="400" height="200"/>
-   <p>
-     A chat app for mobile devices developed with React Native.The app provides
-                   users with a chat interface and options to share images and their location.
-   </p>
-   <a href="https://github.com/archana6832/Chat">See project on GitHub</a> <br>
-
-</div>
-
-
-
-<!--------ANGULAR APP------->
+<!---ANGULAR APP------->
 <div class="grid__item">
    <h2>MyFlix Movie App - Angular</h2>
-   <img src="image/angular_app.png" class="meet" alt="Screenshot of Angular App" width="400" height="200"/>
+   <img src="image/angular_app.png" class="work_image" alt="Screenshot of Angular App"/>
    <p>
      A single-page, responsive movie app built with Angular, with routing and
                    several interface
@@ -120,17 +118,10 @@ personal information, and create a list of their favorite movies.
    <a href="https://archana6832.github.io/myFlix-Angular-client/welcome">Live Link</a>
 </div>
 </div>
-
-
-
   </section>
 
-
-
-<!--------------Footer----------->
-
-
-  <footer class="page-footer">
+<!---Footer----------->
+<footer class="page-footer">
     <p>Find me on</p>
     <div class="social-media">
     <a href="https://github.com/archana6832"><img src="image/iconmonstr-github-1.svg" alt="Github"></a>
@@ -139,6 +130,5 @@ personal information, and create a list of their favorite movies.
   </div>
   </footer>
 
-  <script src="js/tota11y.min.js"></script>
 </body>
 </html>
