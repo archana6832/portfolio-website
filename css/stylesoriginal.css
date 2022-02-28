@@ -73,22 +73,10 @@ a:active {
   max-width: 100%;
 }
 
-.about {
-  margin: 10px;
-  display: flex;
-  flex-wrap: wrap-reverse;
-  justify-content: space-around;
-  line-height: 1.5rem;
-}
-
 .aboutme {
   text-align: center;
   list-style-type: none;
   justify-content: space-around;
-}
-
-.aboutme-list {
-  list-style-type: none;
 }
 
 .button {
